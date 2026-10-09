@@ -213,35 +213,4 @@ IoTBec-code/
 
 检查 `.env` 中的 key、base URL 和模型名称。LLM 返回结果只作为候选字段或安全 marker，必须审查后再用于实验。
 
-## 贡献
 
-欢迎提交问题、验证结果和改进代码。提交前请运行：
-
-```bash
-python -m unittest discover -s tests -v
-python -m compileall -q code CVE-Clustering cve_summary dashboard tests
-```
-
-请不要提交 `.env`、API key、设备密码、运行日志、临时任务报告或未授权获取的固件。
-
-## 手动导入 GitHub
-
-本目录已整理为可直接导入的仓库内容。创建 GitHub 空仓库后，上传本目录中的源码、数据、`README.md`、`LICENSE`、`requirements.txt` 和 `.env.example`，并保留 `.gitignore`。不要上传：
-
-- `.env` 及任何 API key、设备密码或私钥；
-- 原始 PDF（默认未纳入版本控制）；
-- `dashboard/data/` 下的运行时任务报告；
-- `__pycache__/`、日志和其他临时文件。
-
-如果使用本地 Git 命令，可在 GitHub 空仓库页面复制仓库地址后执行：
-
-```bash
-git remote add origin <你的仓库地址>
-git push -u origin main
-```
-
-本次整理不会自动连接或推送到任何远程仓库。
-
-## 许可证
-
-仓库代码采用 MIT License。原始资料、PDF、厂商固件、第三方漏洞报告、数据集和外部服务仍受其各自许可证或使用条款约束。
