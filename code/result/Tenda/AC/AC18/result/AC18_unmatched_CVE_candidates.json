@@ -1,0 +1,1284 @@
+{
+  "method": "exact URI plus critical-parameter containment",
+  "claim": "structural candidate only; live validation is required to confirm exploitability",
+  "source_counts": {
+    "cve_records": 85,
+    "known_vis_records": 31,
+    "target_interfaces": 42,
+    "cves_not_in_vis": 54
+  },
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "CVE ID": "CVE-2020-13394",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/SetNetControlList",
+      "vul_type": "Overflow",
+      "function name": "",
+      "parameter or argument": "list",
+      "status": "structural_candidate",
+      "evidence": {
+        "uri_exact_match": true,
+        "critical_parameters": [
+          "list"
+        ],
+        "parameters_present_in_interface": [
+          "list"
+        ],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [
+          "list"
+        ],
+        "button": "Save",
+        "navigation": "Advanced Settings->Bandwidth Control"
+      }
+    },
+    {
+      "CVE ID": "CVE-2020-13393",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/saveParentControlInfo",
+      "vul_type": "Overflow",
+      "function name": "httpd",
+      "parameter or argument": "deviceId, time",
+      "status": "structural_candidate",
+      "evidence": {
+        "uri_exact_match": true,
+        "critical_parameters": [
+          "deviceId",
+          "time"
+        ],
+        "parameters_present_in_interface": [
+          "deviceId",
+          "time"
+        ],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [
+          "deviceId",
+          "enable",
+          "time",
+          "url_enable",
+          "urls",
+          "day",
+          "limit_type"
+        ],
+        "button": "Save",
+        "navigation": "Parental Control->Parental Control"
+      }
+    },
+    {
+      "CVE ID": "CVE-2020-13389",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/openSchedWifi",
+      "vul_type": "Overflow",
+      "function name": "httpd",
+      "parameter or argument": "schedStartTime, schedEndTime",
+      "status": "structural_candidate",
+      "evidence": {
+        "uri_exact_match": true,
+        "critical_parameters": [
+          "schedStartTime",
+          "schedEndTime"
+        ],
+        "parameters_present_in_interface": [
+          "schedStartTime",
+          "schedEndTime"
+        ],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [
+          "schedWifiEnable",
+          "schedStartTime",
+          "schedEndTime",
+          "timeType",
+          "day"
+        ],
+        "button": "Save",
+        "navigation": "WiFi Settings->WiFi Schedule"
+      }
+    }
+  ],
+  "all_unmatched_records": [
+    {
+      "CVE ID": "CVE-2025-0528",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/telnet",
+      "vul_type": "Injection",
+      "function name": "",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-57580",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/formSetDeviceName",
+      "vul_type": "Overflow",
+      "function name": "formSetDeviceName",
+      "parameter or argument": "devName",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "devName"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "devName"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-57579",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/SetClientState",
+      "vul_type": "Overflow",
+      "function name": "formSetClientState",
+      "parameter or argument": "limitSpeedUp",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "limitSpeedUp"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "limitSpeedUp"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-57578",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/formSetCfm",
+      "vul_type": "Overflow",
+      "function name": "formSetCfm",
+      "parameter or argument": "funcpara1",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "funcpara1"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "funcpara1"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-57577",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/SetSpeedWan",
+      "vul_type": "Overflow",
+      "function name": "formSetSpeedWan",
+      "parameter or argument": "speed_dir",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "speed_dir"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "speed_dir"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-57575",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/fast_setting_wifi_set",
+      "vul_type": "Overflow",
+      "function name": "form_fast_setting_wifi_set",
+      "parameter or argument": "ssid",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "ssid"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "ssid"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-41630",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/fast_setting_wifi_set",
+      "vul_type": "Overflow",
+      "function name": "",
+      "parameter or argument": "ssid",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "ssid"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "ssid"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-33182",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/addWifiMacFilter",
+      "vul_type": "Overflow",
+      "function name": "",
+      "parameter or argument": "deviceId",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "deviceId"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "deviceId"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-33181",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/addWifiMacFilter",
+      "vul_type": "Overflow",
+      "function name": "",
+      "parameter or argument": "deviceMac",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "deviceMac"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "deviceMac"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-30891",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/exeCommand",
+      "vul_type": "Injection",
+      "function name": "",
+      "parameter or argument": "cmdinput",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "cmdinput"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "cmdinput"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-28553",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/addressNat",
+      "vul_type": "Overflow",
+      "function name": "fromAddressNat",
+      "parameter or argument": "entrys",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "entrys"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "entrys"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-28551",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/fast_setting_wifi_set",
+      "vul_type": "Overflow",
+      "function name": "form_fast_setting_wifi_set",
+      "parameter or argument": "ssid",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "ssid"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "ssid"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-28550",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/expandDlnaFile",
+      "vul_type": "Overflow",
+      "function name": "formExpandDlnaFile",
+      "parameter or argument": "filePath",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "filePath"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "filePath"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-28545",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/setUsbUnload",
+      "vul_type": "Injection",
+      "function name": "formsetUsbUnload",
+      "parameter or argument": "deviceName",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "deviceName"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "deviceName"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-28537",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/NatStaticSetting",
+      "vul_type": "Overflow",
+      "function name": "fromNatStaticSetting",
+      "parameter or argument": "page",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "page"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "page"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-28535",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/addressNat",
+      "vul_type": "Overflow",
+      "function name": "fromAddressNat",
+      "parameter or argument": "mitInterface",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "mitInterface"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "mitInterface"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-2558",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/execCommand",
+      "vul_type": "Overflow",
+      "function name": "formexeCommand",
+      "parameter or argument": "cmdinput",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "cmdinput"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "cmdinput"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-2547",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/execCommand",
+      "vul_type": "Overflow",
+      "function name": "R7WebsSecurityHandler",
+      "parameter or argument": "password",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "password"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "password"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-2486",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/QuickIndex",
+      "vul_type": "Overflow",
+      "function name": "formQuickIndex",
+      "parameter or argument": "PPPOEPassword",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "PPPOEPassword"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "PPPOEPassword"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-2485",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/SetSpeedWan",
+      "vul_type": "Overflow",
+      "function name": "formSetSpeedWan",
+      "parameter or argument": "speed_dir",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "speed_dir"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "speed_dir"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2024-10280",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/GetIPTV",
+      "vul_type": "other type",
+      "function name": "websReadEvent",
+      "parameter or argument": "Content-Length",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "Content-Length"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "Content-Length"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2023-38823",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "bin/httpd",
+      "vul_type": "Overflow",
+      "function name": "formSetCfm",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2023-30135",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "",
+      "vul_type": "Injection",
+      "function name": "setUsbUnload",
+      "parameter or argument": "deviceName",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "deviceName"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "deviceName"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2023-24170",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/fromSetWirelessRepeat",
+      "vul_type": "Overflow",
+      "function name": "",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2023-24169",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/FUN_0007343c",
+      "vul_type": "Overflow",
+      "function name": "",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2023-24167",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/add_white_node",
+      "vul_type": "Overflow",
+      "function name": "",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2023-24165",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/initIpAddrInfo",
+      "vul_type": "Overflow",
+      "function name": "",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2023-24164",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/FUN_000c2318",
+      "vul_type": "Overflow",
+      "function name": "",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-44183",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "",
+      "vul_type": "Overflow",
+      "function name": "formSetWifiGuestBasic",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-44180",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "",
+      "vul_type": "Overflow",
+      "function name": "addWifiMacFilter",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-44178",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "",
+      "vul_type": "Overflow",
+      "function name": "formWifiWpsOOB",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-44177",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "",
+      "vul_type": "Overflow",
+      "function name": "formWifiWpsStart",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-44176",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "",
+      "vul_type": "Overflow",
+      "function name": "fromSetRouteStatic",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-44175",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "",
+      "vul_type": "Overflow",
+      "function name": "formSetMacFilterCfg",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-44174",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "",
+      "vul_type": "Overflow",
+      "function name": "formSetDeviceName",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-44172",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "",
+      "vul_type": "Overflow",
+      "function name": "R7WebsSecurityHandler",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-44171",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "",
+      "vul_type": "Overflow",
+      "function name": "form_fast_setting_wifi_set",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-40869",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/DhcpListClient/",
+      "vul_type": "Overflow",
+      "function name": "fromDhcpListClient",
+      "parameter or argument": "list*",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "list*"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "list*"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-40862",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/NatStaticSetting",
+      "vul_type": "Overflow",
+      "function name": "fromNatStaticSetting",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-40854",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/fast_setting_wifi_set",
+      "vul_type": "Overflow",
+      "function name": "",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-38326",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/NatStaticSetting",
+      "vul_type": "Overflow",
+      "function name": "",
+      "parameter or argument": "page",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "page"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "page"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-38325",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/expandDlnaFile",
+      "vul_type": "Overflow",
+      "function name": "",
+      "parameter or argument": "filePath",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "filePath"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "filePath"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-35201",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "",
+      "vul_type": "Injection",
+      "function name": "",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-31446",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/WriteFacMac",
+      "vul_type": "Injection",
+      "function name": "",
+      "parameter or argument": "Mac",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "Mac"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "Mac"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-30477",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/SetClientState",
+      "vul_type": "Overflow",
+      "function name": "httpd",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-30473",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/fast_setting_wifi_set",
+      "vul_type": "Overflow",
+      "function name": "form_fast_setting_wifi_set",
+      "parameter or argument": "ssid",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "ssid"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "ssid"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2022-30472",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/addressNat",
+      "vul_type": "Overflow",
+      "function name": "fromAddressNat",
+      "parameter or argument": "entrys, mitInterface",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "entrys",
+          "mitInterface"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "entrys",
+          "mitInterface"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2020-24987",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/usr/lib/lua/ngx_authserver/ngx_wdas.lua",
+      "vul_type": "Injection",
+      "function name": "logincheck",
+      "parameter or argument": "",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2020-13394",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/SetNetControlList",
+      "vul_type": "Overflow",
+      "function name": "",
+      "parameter or argument": "list",
+      "status": "structural_candidate",
+      "evidence": {
+        "uri_exact_match": true,
+        "critical_parameters": [
+          "list"
+        ],
+        "parameters_present_in_interface": [
+          "list"
+        ],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [
+          "list"
+        ],
+        "button": "Save",
+        "navigation": "Advanced Settings->Bandwidth Control"
+      }
+    },
+    {
+      "CVE ID": "CVE-2020-13393",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/saveParentControlInfo",
+      "vul_type": "Overflow",
+      "function name": "httpd",
+      "parameter or argument": "deviceId, time",
+      "status": "structural_candidate",
+      "evidence": {
+        "uri_exact_match": true,
+        "critical_parameters": [
+          "deviceId",
+          "time"
+        ],
+        "parameters_present_in_interface": [
+          "deviceId",
+          "time"
+        ],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [
+          "deviceId",
+          "enable",
+          "time",
+          "url_enable",
+          "urls",
+          "day",
+          "limit_type"
+        ],
+        "button": "Save",
+        "navigation": "Parental Control->Parental Control"
+      }
+    },
+    {
+      "CVE ID": "CVE-2020-13392",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/setcfm",
+      "vul_type": "Overflow",
+      "function name": "httpd",
+      "parameter or argument": "funcpara1",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "funcpara1"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "funcpara1"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2020-13391",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/SetSpeedWan",
+      "vul_type": "Overflow",
+      "function name": "httpd",
+      "parameter or argument": "speed_dir",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "speed_dir"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "speed_dir"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2020-13390",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/addressNat",
+      "vul_type": "Overflow",
+      "function name": "httpd",
+      "parameter or argument": "mitInterface",
+      "status": "no_matching_interface",
+      "evidence": {
+        "uri_exact_match": false,
+        "critical_parameters": [
+          "mitInterface"
+        ],
+        "parameters_present_in_interface": [],
+        "parameters_missing_from_interface": [
+          "mitInterface"
+        ],
+        "interface_parameters": [],
+        "button": "",
+        "navigation": ""
+      }
+    },
+    {
+      "CVE ID": "CVE-2020-13389",
+      "vendor": "Tenda",
+      "product": "AC18",
+      "URI": "/goform/openSchedWifi",
+      "vul_type": "Overflow",
+      "function name": "httpd",
+      "parameter or argument": "schedStartTime, schedEndTime",
+      "status": "structural_candidate",
+      "evidence": {
+        "uri_exact_match": true,
+        "critical_parameters": [
+          "schedStartTime",
+          "schedEndTime"
+        ],
+        "parameters_present_in_interface": [
+          "schedStartTime",
+          "schedEndTime"
+        ],
+        "parameters_missing_from_interface": [],
+        "interface_parameters": [
+          "schedWifiEnable",
+          "schedStartTime",
+          "schedEndTime",
+          "timeType",
+          "day"
+        ],
+        "button": "Save",
+        "navigation": "WiFi Settings->WiFi Schedule"
+      }
+    }
+  ]
+}

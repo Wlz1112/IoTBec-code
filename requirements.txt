@@ -1,0 +1,12 @@
+# Core paper reproduction dependencies
+openai>=1.30
+python-dotenv>=1.0
+rapidfuzz>=3.0
+requests>=2.31
+selenium==4.31.0
+webdriver-manager>=4.0
+
+# Dataset analysis and figures
+pandas>=2.0
+openpyxl>=3.1
+matplotlib>=3.8

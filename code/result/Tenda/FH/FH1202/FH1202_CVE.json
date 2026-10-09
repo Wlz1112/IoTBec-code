@@ -1,0 +1,402 @@
+[
+    {
+        "CVE ID": "CVE-2025-5978",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "fromVirtualSer",
+        "URI": "/goform/VirtualSer",
+        "parameter or argument": "page",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-32315",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "formWanParameterSetting",
+        "URI": "/goform/WanParameterSetting",
+        "parameter or argument": "adslPwd",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-32302",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "fromWizardHandle",
+        "URI": "/goform/WizardHandle",
+        "parameter or argument": "PPW",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-32282",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Injection",
+        "function name": "formexeCommand",
+        "URI": "/goform/exeCommand",
+        "parameter or argument": "cmdinput",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-30596",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "formSetDeviceName",
+        "URI": "/goform/SetOnlineDevName",
+        "parameter or argument": "deviceId",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-30595",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "addWifiMacFilter",
+        "URI": "/goform/addWifiMacFilter",
+        "parameter or argument": "deviceId",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-30594",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "addWifiMacFilter",
+        "URI": "/goform/addWifiMacFilter",
+        "parameter or argument": "deviceMac",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-30593",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "formSetDeviceName",
+        "URI": "/goform/SetOnlineDevName",
+        "parameter or argument": "deviceName",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-30592",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "fromAddressNat",
+        "URI": "/goform/addressNat",
+        "parameter or argument": "page",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-30591",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "saveParentControlInfo",
+        "URI": "/goform/saveParentControlInfo",
+        "parameter or argument": "time",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-30590",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "setSchedWifi",
+        "URI": "/goform/openSchedWifi",
+        "parameter or argument": "schedEndTime",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-30589",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "fromAddressNat",
+        "URI": "/goform/addressNat",
+        "parameter or argument": "entrys",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-30588",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "setSchedWifi",
+        "URI": "/goform/openSchedWifi",
+        "parameter or argument": "schedStartTime",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-30587",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "saveParentControlInfo",
+        "URI": "/goform/saveParentControlInfo",
+        "parameter or argument": "urls",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-30586",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "formWifiBasicSet",
+        "URI": "/goform/WifiBasicSet",
+        "parameter or argument": "security_5g",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-30585",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "saveParentControlInfo",
+        "URI": "/goform/saveParentControlInfo",
+        "parameter or argument": "deviceId",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-30584",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "formWifiBasicSet",
+        "URI": "/goform/WifiBasicSet",
+        "parameter or argument": "security parameter",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-30583",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "fromAddressNat",
+        "URI": "/goform/addressNat",
+        "parameter or argument": "mitInterface",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-2987",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "GetParentControlInfo",
+        "URI": "/goform/GetParentControlInfo",
+        "parameter or argument": "mac",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-2986",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "formSetSpeedWan",
+        "URI": "/goform/SetSpeedWan",
+        "parameter or argument": "speed_dir",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-2985",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "formQuickIndex",
+        "URI": "/goform/QuickIndex",
+        "parameter or argument": "PPPOEPassword",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-2984",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "formSetCfm",
+        "URI": "/goform/setcfm",
+        "parameter or argument": "funcpara1",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-2983",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "formSetClientState",
+        "URI": "/goform/SetClientState",
+        "parameter or argument": "deviceId/limitSpeed/limitSpeedUp",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-2982",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Injection",
+        "function name": "formWriteFacMac",
+        "URI": "/goform/WriteFacMac",
+        "parameter or argument": "mac",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-2981",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "form_fast_setting_wifi_set",
+        "URI": "/goform/fast_setting_wifi_set",
+        "parameter or argument": "ssid",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-2980",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "formexeCommand",
+        "URI": "/goform/execCommand",
+        "parameter or argument": "cmdinput",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2024-12002",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "other type",
+        "function name": "websReadEvent",
+        "URI": "/goform/GetIPTV",
+        "parameter or argument": "Content-Length",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2023-38939",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "formWrlsafeset",
+        "URI": "/goform/AdvSetWrlsafeset",
+        "parameter or argument": "mit_ssid",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2023-38938",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "",
+        "URI": "/L7Im",
+        "parameter or argument": "page",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2023-38932",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "SafeEmailFilter",
+        "URI": "/SafeEmailFilter",
+        "parameter or argument": "page",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2023-37723",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "fromqossetting",
+        "URI": "/goform/qossetting",
+        "parameter or argument": "page",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2023-37722",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "fromSafeUrlFilter",
+        "URI": "/goform/SafeUrlFilter",
+        "parameter or argument": "page",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2023-37721",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "fromSafeMacFilter",
+        "URI": "/goform/SafeMacFilter",
+        "parameter or argument": "page",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2023-37719",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "fromP2pListFilter",
+        "URI": "/goform/fromP2pListFilter",
+        "parameter or argument": "page",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2023-37718",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "fromSafeClientFilter",
+        "URI": "/goform/SafeClientFilter",
+        "parameter or argument": "page",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2023-37717",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "fromDhcpListClient",
+        "URI": "/goform/DhcpListClient",
+        "parameter or argument": "page",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2023-37716",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "fromNatStaticSetting",
+        "URI": "/goform/NatStaticSetting",
+        "parameter or argument": "page",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2023-37715",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "frmL7ProtForm",
+        "URI": "/goform/frmL7ProtForm",
+        "parameter or argument": "page",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2023-37714",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "fromRouteStatic",
+        "URI": "/goform/RouteStatic",
+        "parameter or argument": "page",
+        "POC": ""
+    },
+    {
+        "CVE ID": "CVE-2023-37712",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "vul_type": "Overflow",
+        "function name": "fromSetIpBind",
+        "URI": "/goform/SetIpBind",
+        "parameter or argument": "page",
+        "POC": ""
+    }
+]

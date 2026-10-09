@@ -1,0 +1,422 @@
+[
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/WanParameterSetting",
+        "form_parameter": "['wanType', 'adslUser', 'adslPwd', 'vpnServer', 'vpnUser', 'vpnPwd', 'vpnWanType', 'dnsAuto', 'staticIp', 'mask', 'gateway', 'dns1', 'dns2', 'module', 'downSpeedLimit']",
+        "form_format": "key-value",
+        "content": "['wanType', 'adslUser', 'adslPwd', 'vpnServer', 'vpnUser', 'vpnPwd', 'vpnWanType', 'dnsAuto', 'staticIp', 'mask', 'gateway', 'dns1', 'dns2', 'module', 'downSpeedLimit']",
+        "button": "Connect",
+        "navigation": "Internet Settings->Internet Settings"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/WifiBasicSet",
+        "form_parameter": "['wrlEn', 'wrlEn_5g', 'security', 'security_5g', 'ssid', 'ssid_5g', 'hideSsid', 'hideSsid_5g', 'wrlPwd', 'wrlPwd_5g']",
+        "form_format": "key-value",
+        "content": "['wrlEn', 'wrlEn_5g', 'security', 'security_5g', 'ssid', 'ssid_5g', 'hideSsid', 'hideSsid_5g', 'wrlPwd', 'wrlPwd_5g']",
+        "button": "Save",
+        "navigation": "WiFi Settings->WiFi Name & Password"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/openSchedWifi",
+        "form_parameter": "['schedWifiEnable', 'schedStartTime', 'schedEndTime', 'timeType', 'day']",
+        "form_format": "key-value",
+        "content": "['schedWifiEnable', 'schedStartTime', 'schedEndTime', 'timeType', 'day']",
+        "button": "Save",
+        "navigation": "WiFi Settings->WiFi Schedule"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/WifiExtraSet",
+        "form_parameter": "['wl_mode']",
+        "form_format": "key-value",
+        "content": "['wl_mode']",
+        "button": "Save",
+        "navigation": "WiFi Settings->Wireless Repeating"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/WifiRadioSet",
+        "form_parameter": "['adv_mode', 'adv_channel', 'adv_band', 'adv_mode_5g', 'adv_channel_5g', 'adv_band_5g']",
+        "form_format": "key-value",
+        "content": "['adv_mode', 'adv_channel', 'adv_band', 'adv_mode_5g', 'adv_channel_5g', 'adv_band_5g']",
+        "button": "Save",
+        "navigation": "WiFi Settings->Channel & Bandwidth"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/WifiPowerSet",
+        "form_parameter": "['power', 'power_5g']",
+        "form_format": "key-value",
+        "content": "['power', 'power_5g']",
+        "button": "Save",
+        "navigation": "WiFi Settings->Transmit Power"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/WifiWpsSet",
+        "form_parameter": "['wpsEn']",
+        "form_format": "key-value",
+        "content": "['wpsEn']",
+        "button": "WPS",
+        "navigation": "WiFi Settings->WPS"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/WifiBeamformingSet",
+        "form_parameter": "['beamformingEn']",
+        "form_format": "key-value",
+        "content": "['beamformingEn']",
+        "button": "Beamforming+",
+        "navigation": "WiFi Settings->Beamforming+"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/setApModeCfg",
+        "form_parameter": "['apModeEn']",
+        "form_format": "key-value",
+        "content": "['apModeEn']",
+        "button": "Save",
+        "navigation": "WiFi Settings->AP Mode"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/WifiGuestSet",
+        "form_parameter": "['guestEn', 'guestEn_5g', 'guestSecurity', 'guestSecurity_5g', 'guestSsid', 'guestSsid_5g', 'guestWrlPwd', 'guestWrlPwd_5g', 'effectiveTime', 'shareSpeed']",
+        "form_format": "key-value",
+        "content": "['guestEn', 'guestEn_5g', 'guestSecurity', 'guestSecurity_5g', 'guestSsid', 'guestSsid_5g', 'guestWrlPwd', 'guestWrlPwd_5g', 'effectiveTime', 'shareSpeed']",
+        "button": "Save",
+        "navigation": "Guest Network->Guest Network"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetOnlineDevName",
+        "form_parameter": "['devName', 'mac']",
+        "form_format": "key-value",
+        "content": "['devName', 'mac']",
+        "button": "Save",
+        "navigation": "Parental Control->Parental Control"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/saveParentControlInfo",
+        "form_parameter": "['deviceId', 'enable', 'time', 'url_enable', 'urls', 'day', 'limit_type']",
+        "form_format": "key-value",
+        "content": "['deviceId', 'enable', 'time', 'url_enable', 'urls', 'day', 'limit_type']",
+        "button": "Save",
+        "navigation": "Parental Control->Parental Control"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetPptpServerCfg",
+        "form_parameter": "['serverEn', 'startIp', 'endIp', 'mppe', 'mppeOp']",
+        "form_format": "key-value",
+        "content": "['serverEn', 'startIp', 'endIp', 'mppe', 'mppeOp']",
+        "button": "Save",
+        "navigation": "VPN->PPTP Server"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/setPptpUserList",
+        "form_parameter": "['list']",
+        "form_format": "key-value",
+        "content": "['list']",
+        "button": "+New",
+        "navigation": "VPN->PPTP Server"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetPptpClientCfg",
+        "form_parameter": "['clientEn', 'clientType', 'clientMppe', 'clientMppeOp', 'domain', 'userName', 'password']",
+        "form_format": "key-value",
+        "content": "['clientEn', 'clientType', 'clientMppe', 'clientMppeOp', 'domain', 'userName', 'password']",
+        "button": "Save",
+        "navigation": "VPN->PPTP/L2TP Client"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetSambaCfg",
+        "form_parameter": "['fileCode', 'password', 'premitEn', 'guestpwd', 'guestuser', 'guestaccess', 'internetPort']",
+        "form_format": "key-value",
+        "content": "['fileCode', 'password', 'premitEn', 'guestpwd', 'guestuser', 'guestaccess', 'internetPort']",
+        "button": "Save",
+        "navigation": "USB App->Share File"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetDlnaCfg",
+        "form_parameter": "['dlnaEn', 'deviceName', 'scanList']",
+        "form_format": "key-value",
+        "content": "['dlnaEn', 'deviceName', 'scanList']",
+        "button": "Save",
+        "navigation": "USB App->DLNA"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetPrinterCfg",
+        "form_parameter": "['printerEn']",
+        "form_format": "key-value",
+        "content": "['printerEn']",
+        "button": "Share Printer",
+        "navigation": "USB App->Share Printer"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetNetControlList",
+        "form_parameter": "['list']",
+        "form_format": "key-value",
+        "content": "['list']",
+        "button": "Save",
+        "navigation": "Advanced Settings->Bandwidth Control"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/cloudv2",
+        "form_parameter": "['module', 'opt', 'rand']",
+        "form_format": "key-value",
+        "content": "['module', 'opt', 'rand']",
+        "button": "Save",
+        "navigation": "Advanced Settings->Tenda App"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/PowerSaveSet",
+        "form_parameter": "['powerSavingEn', 'time', 'ledCloseType', 'powerSaveDelay']",
+        "form_format": "key-value",
+        "content": "['powerSavingEn', 'time', 'ledCloseType', 'powerSaveDelay']",
+        "button": "Save",
+        "navigation": "Advanced Settings->Sleeping Mode"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetLEDCfg",
+        "form_parameter": "['ledType', 'time', 'ledCloseType']",
+        "form_format": "key-value",
+        "content": "['ledType', 'time', 'ledCloseType']",
+        "button": "Save",
+        "navigation": "Advanced Settings->Led Control"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/setMacFilterCfg",
+        "form_parameter": "['macFilterType', 'deviceList']",
+        "form_format": "key-value",
+        "content": "['macFilterType', 'deviceList']",
+        "button": "Save",
+        "navigation": "Advanced Settings->Filter MAC Address"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetFirewallCfg",
+        "form_parameter": "['firewallEn']",
+        "form_format": "key-value",
+        "content": "['firewallEn']",
+        "button": "Save",
+        "navigation": "Advanced Settings->Firewall"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetIPTVCfg",
+        "form_parameter": "['stbEn', 'igmpEn', 'iptvType', 'vlanId', 'list']",
+        "form_format": "key-value",
+        "content": "['stbEn', 'igmpEn', 'iptvType', 'vlanId', 'list']",
+        "button": "Save",
+        "navigation": "Advanced Settings->IPTV"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetStaticRouteCfg",
+        "form_parameter": "['list']",
+        "form_format": "key-value",
+        "content": "['list']",
+        "button": "+New",
+        "navigation": "Advanced Settings->Static Route"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetDDNSCfg",
+        "form_parameter": "['ddnsEn', 'serverName', 'ddnsUser', 'ddnsPwd', 'ddnsDomain']",
+        "form_format": "key-value",
+        "content": "['ddnsEn', 'serverName', 'ddnsUser', 'ddnsPwd', 'ddnsDomain']",
+        "button": "Save",
+        "navigation": "Advanced Settings->DDNS"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetVirtualServerCfg",
+        "form_parameter": "['list']",
+        "form_format": "key-value",
+        "content": "['list']",
+        "button": "+New",
+        "navigation": "Advanced Settings->Virtual Server"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetDMZCfg",
+        "form_parameter": "['dmzEn', 'dmzIp']",
+        "form_format": "key-value",
+        "content": "['dmzEn', 'dmzIp']",
+        "button": "Save",
+        "navigation": "Advanced Settings->DMZ Host"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetUpnpCfg",
+        "form_parameter": "['upnpEn']",
+        "form_format": "key-value",
+        "content": "['upnpEn']",
+        "button": "UPnP",
+        "navigation": "Advanced Settings->UPnP"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/AdvSetLanip",
+        "form_parameter": "['lanIp', 'lanMask', 'dhcpEn', 'startIp', 'endIp', 'leaseTime', 'lanDnsAuto', 'lanDns1', 'lanDns2']",
+        "form_format": "key-value",
+        "content": "['lanIp', 'lanMask', 'dhcpEn', 'startIp', 'endIp', 'leaseTime', 'lanDnsAuto', 'lanDns1', 'lanDns2']",
+        "button": "Save",
+        "navigation": "System Settings->LAN Settings"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetIpMacBind",
+        "form_parameter": "['bindnum', 'list']",
+        "form_format": "key-value",
+        "content": "['bindnum', 'list']",
+        "button": "+New",
+        "navigation": "System Settings->DHCP Reservation"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/AdvSetMacMtuWan",
+        "form_parameter": "['wanMTU', 'wanSpeed', 'cloneType', 'mac']",
+        "form_format": "key-value",
+        "content": "['wanMTU', 'wanSpeed', 'cloneType', 'mac']",
+        "button": "Save",
+        "navigation": "System Settings->WAN Settings"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetSysTimeCfg",
+        "form_parameter": "['timePeriod', 'ntpServer', 'timeZone']",
+        "form_format": "key-value",
+        "content": "['timePeriod', 'ntpServer', 'timeZone']",
+        "button": "Save",
+        "navigation": "System Settings->Time Settings"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SysToolChangePwd",
+        "form_parameter": "['GO', 'SYSOPS', 'SYSPS', 'SYSPS2']",
+        "form_format": "key-value",
+        "content": "['GO', 'SYSOPS', 'SYSPS', 'SYSPS2']",
+        "button": "Save",
+        "navigation": "System Settings->Login Password"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SysToolReboot",
+        "form_parameter": "['action']",
+        "form_format": "key-value",
+        "content": "action=0",
+        "button": "Reboot",
+        "navigation": "System Settings->Reboot and Reset"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SysToolRestoreSet",
+        "form_parameter": "['action']",
+        "form_format": "key-value",
+        "content": "action=0",
+        "button": "Reset",
+        "navigation": "System Settings->Reboot and Reset"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/cgi-bin/DownloadCfg/RouterCfm.cfg",
+        "form_parameter": "",
+        "form_format": "key-value",
+        "content": "",
+        "button": "Back Up",
+        "navigation": "System Settings->Backup/Restore"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/cgi-bin/UploadCfg",
+        "form_parameter": "",
+        "form_format": "key-value",
+        "content": "",
+        "button": "Restore",
+        "navigation": "System Settings->Backup/Restore"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetRemoteWebCfg",
+        "form_parameter": "['remoteWebEn', 'remoteIp', 'remotePort']",
+        "form_format": "key-value",
+        "content": "['remoteWebEn', 'remoteIp', 'remotePort']",
+        "button": "Save",
+        "navigation": "System Settings->Remote Management"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/cgi-bin/DownloadLog/syslog.tar",
+        "form_parameter": "",
+        "form_format": "key-value",
+        "content": "",
+        "button": "Export",
+        "navigation": "System Settings->System Log"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC15",
+        "URI": "/goform/SetSysAutoRebbotCfg",
+        "form_parameter": "['autoRebootEn', 'delayRebootEn', 'rebootTime']",
+        "form_format": "key-value",
+        "content": "['autoRebootEn', 'delayRebootEn', 'rebootTime']",
+        "button": "Save",
+        "navigation": "System Settings->Automatic Maintenance"
+    }
+]

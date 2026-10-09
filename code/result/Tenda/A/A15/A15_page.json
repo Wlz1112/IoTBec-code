@@ -1,0 +1,72 @@
+[
+    {
+        "vendor": "Tenda",
+        "product": "A15",
+        "URI": "/goform/WifiBasicSet",
+        "form_parameter": "['ssid', 'ssid_5g', 'wrlPwd', 'wrlPwd_5g', 'security', 'security_5g', 'hideSsid', 'hideSsid_5g']",
+        "form_format": "key-value",
+        "content": "['ssid', 'ssid_5g', 'wrlPwd', 'wrlPwd_5g', 'security', 'security_5g', 'hideSsid', 'hideSsid_5g']",
+        "button": "Save",
+        "navigation": "WiFi Settings->WiFi Name & Password"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "A15",
+        "URI": "/goform/WifiExtraSet",
+        "form_parameter": "['wl_mode']",
+        "form_format": "key-value",
+        "content": "['wl_mode']",
+        "button": "Save",
+        "navigation": "Operating Mode->Repeater Mode"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "A15",
+        "URI": "/goform/setApModeCfg",
+        "form_parameter": "['apModeEn']",
+        "form_format": "key-value",
+        "content": "['apModeEn']",
+        "button": "Save",
+        "navigation": "Operating Mode->AP Mode"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "A15",
+        "URI": "/goform/SysToolChangePwd",
+        "form_parameter": "['SYSOPS', 'SYSPS', 'SYSPS2']",
+        "form_format": "key-value",
+        "content": "['SYSOPS', 'SYSPS', 'SYSPS2']",
+        "button": "Save",
+        "navigation": "Administration->Set Login Password"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "A15",
+        "URI": "/goform/SysToolReboot",
+        "form_parameter": "['action']",
+        "form_format": "key-value",
+        "content": "['action']",
+        "button": "Reboot",
+        "navigation": "Administration->Reboot"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "A15",
+        "URI": "/goform/SysToolRestoreSet",
+        "form_parameter": "['action']",
+        "form_format": "key-value",
+        "content": "['action']",
+        "button": "Reset",
+        "navigation": "Administration->Reset"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "A15",
+        "URI": "/cgi-bin/DownloadLog/syslog.tar",
+        "form_parameter": "",
+        "form_format": "key-value",
+        "content": "",
+        "button": "Export Syslog",
+        "navigation": "System Settings->Export"
+    }
+]

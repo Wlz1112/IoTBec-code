@@ -1,0 +1,123 @@
+[
+  {
+    "vendor": "Tenda",
+    "product": "A15",
+    "URI": "/goform/WifiBasicSet",
+    "form_parameter": "['ssid', 'ssid_5g', 'wrlPwd', 'wrlPwd_5g', 'security', 'security_5g', 'hideSsid', 'hideSsid_5g']",
+    "form_format": "key-value",
+    "content": "['ssid', 'ssid_5g', 'wrlPwd', 'wrlPwd_5g', 'security', 'security_5g', 'hideSsid', 'hideSsid_5g']",
+    "button": "Save",
+    "navigation": "WiFi Settings->WiFi Name & Password",
+    "match_result": [
+      {
+        "CVE ID": "CVE-2023-24166",
+        "vendor": "Tenda",
+        "product": "AC18",
+        "URI": "/goform/WifiBasicSet",
+        "form_parameter": "['wrlEn', 'wrlEn_5g', 'security', 'security_5g', 'ssid', 'ssid_5g', 'hideSsid', 'hideSsid_5g', 'wrlPwd', 'wrlPwd_5g']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "WiFi Settings->WiFi Name & Password",
+        "vul_type": "Overflow",
+        "function name": "formWifiBasicSet",
+        "parameter or argument": "",
+        "POC": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Tenda",
+    "product": "A15",
+    "URI": "/goform/WifiExtraSet",
+    "form_parameter": "['wl_mode']",
+    "form_format": "key-value",
+    "content": "['wl_mode']",
+    "button": "Save",
+    "navigation": "Operating Mode->Repeater Mode",
+    "match_result": [
+      {
+        "CVE ID": "CVE-2024-2546",
+        "vendor": "Tenda",
+        "product": "AC18",
+        "URI": "/goform/WifiExtraSet",
+        "form_parameter": "['wl_mode']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "WiFi Settings->Wireless Repeating",
+        "vul_type": "Overflow",
+        "function name": "fromSetWirelessRepeat",
+        "parameter or argument": "wpapsk_crypto5g",
+        "POC": ""
+      },
+      {
+        "CVE ID": "CVE-2022-30475",
+        "vendor": "Tenda",
+        "product": "AC18",
+        "URI": "/goform/WifiExtraSet",
+        "form_parameter": "['wl_mode']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "WiFi Settings->Wireless Repeating",
+        "vul_type": "Overflow",
+        "function name": "",
+        "parameter or argument": "",
+        "POC": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Tenda",
+    "product": "A15",
+    "URI": "/goform/setApModeCfg",
+    "form_parameter": "['apModeEn']",
+    "form_format": "key-value",
+    "content": "['apModeEn']",
+    "button": "Save",
+    "navigation": "Operating Mode->AP Mode",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "A15",
+    "URI": "/goform/SysToolChangePwd",
+    "form_parameter": "['SYSOPS', 'SYSPS', 'SYSPS2']",
+    "form_format": "key-value",
+    "content": "['SYSOPS', 'SYSPS', 'SYSPS2']",
+    "button": "Save",
+    "navigation": "Administration->Set Login Password",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "A15",
+    "URI": "/goform/SysToolReboot",
+    "form_parameter": "['action']",
+    "form_format": "key-value",
+    "content": "['action']",
+    "button": "Reboot",
+    "navigation": "Administration->Reboot",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "A15",
+    "URI": "/goform/SysToolRestoreSet",
+    "form_parameter": "['action']",
+    "form_format": "key-value",
+    "content": "['action']",
+    "button": "Reset",
+    "navigation": "Administration->Reset",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "A15",
+    "URI": "/cgi-bin/DownloadLog/syslog.tar",
+    "form_parameter": "",
+    "form_format": "key-value",
+    "content": "",
+    "button": "Export Syslog",
+    "navigation": "System Settings->Export",
+    "match_result": []
+  }
+]

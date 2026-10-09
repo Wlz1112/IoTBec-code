@@ -1,0 +1,591 @@
+[
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/AdvSetLanip",
+    "form_parameter": "['GO', 'mask2', 'mask3', 'mac', 'LANIP', 'LANMASK']",
+    "form_format": "key-value",
+    "content": "['GO', 'mask2', 'mask3', 'mac', 'LANIP', 'LANMASK']",
+    "button": "Save",
+    "navigation": "Network->LAN",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/AdvSetWan",
+    "form_parameter": "['GO', 'wanmode', 'WANPORT', 'reboot', 'wanm', 'isp', 'IP', 'NetMask', 'GateWay', 'Dns1', 'Dns2', 'pptpIP', 'pptpPUN', 'pptpPPW', 'pptpMPPEEX', 'pptpAdrMode', 'pptpWANIP', 'pptpWANMSK', 'pptpWANGW', 'pptpDNS1', 'pptpDNS2', 'l2tpIP', 'l2tpPUN', 'l2tpPPW', 'l2tpAdrMode', 'l2tpWANIP', 'l2tpWANMSK', 'l2tpWANGW', 'l2tpDNS1', 'l2tpDNS2', 'PPPOEName', 'PPPOEPassword', 'support_Mppe', 'dpoeAdrMode', 'dpoeWANIP', 'dpoeWANMSK', 'dpoeWANGW', 'dpoeDNS1', 'dpoeDNS2', 'mtuvalue']",
+    "form_format": "key-value",
+    "content": "['GO', 'wanmode', 'WANPORT', 'reboot', 'wanm', 'isp', 'IP', 'NetMask', 'GateWay', 'Dns1', 'Dns2', 'pptpIP', 'pptpPUN', 'pptpPPW', 'pptpMPPEEX', 'pptpAdrMode', 'pptpWANIP', 'pptpWANMSK', 'pptpWANGW', 'pptpDNS1', 'pptpDNS2', 'l2tpIP', 'l2tpPUN', 'l2tpPPW', 'l2tpAdrMode', 'l2tpWANIP', 'l2tpWANMSK', 'l2tpWANGW', 'l2tpDNS1', 'l2tpDNS2', 'PPPOEName', 'PPPOEPassword', 'support_Mppe', 'dpoeAdrMode', 'dpoeWANIP', 'dpoeWANMSK', 'dpoeWANGW', 'dpoeDNS1', 'dpoeDNS2', 'mtuvalue']",
+    "button": "Save",
+    "navigation": "Network->WAN",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/WanPortParam",
+    "form_parameter": "['GO', 'Port1', 'Port2', 'Port3', 'Port4']",
+    "form_format": "key-value",
+    "content": "['GO', 'Port1', 'Port2', 'Port3', 'Port4']",
+    "button": "Save",
+    "navigation": "Network->Port Mode",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/AdvSetMacClone",
+    "form_parameter": "['GO', 'LANMAC', 'WAN1MAC', 'WAN2MAC', 'WAN3MAC', 'cloneEn', 'WAN4MAC']",
+    "form_format": "key-value",
+    "content": "['GO', 'LANMAC', 'WAN1MAC', 'WAN2MAC', 'WAN3MAC', 'cloneEn', 'WAN4MAC']",
+    "button": "Save",
+    "navigation": "Network->MAC Clone",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/DhcpSetSer",
+    "form_parameter": "['GO', 'DHEN', 'dips', 'dipe', 'DHLT', 'DS1', 'DS2']",
+    "form_format": "key-value",
+    "content": "['GO', 'DHEN', 'dips', 'dipe', 'DHLT', 'DS1', 'DS2']",
+    "button": "Save",
+    "navigation": "Network->DHCP Server",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/DhcpListClient",
+    "form_parameter": "['postData', 'LISTLEN', 'page', 'tmpip', 'IP', 'MAC', 'MAC', 'MAC', 'MAC', 'MAC', 'MAC']",
+    "form_format": "key-value",
+    "content": "['postData', 'LISTLEN', 'page', 'tmpip', 'IP', 'MAC', 'MAC', 'MAC', 'MAC', 'MAC', 'MAC']",
+    "button": "Save",
+    "navigation": "Network->Static Assignment",
+    "match_result": [
+      {
+        "CVE ID": "CVE-2023-37717",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "URI": "/goform/DhcpListClient",
+        "form_parameter": "['postData', 'LISTLEN', 'page', 'tmpip', 'IP', 'MAC', 'MAC', 'MAC', 'MAC', 'MAC', 'MAC']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Network->Static Assignment",
+        "vul_type": "Overflow",
+        "function name": "fromDhcpListClient",
+        "parameter or argument": "page",
+        "POC": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/GstDhcpSetSer",
+    "form_parameter": "['GO', 'DHEN', 'dips', 'dipe', 'DHLT', 'DS1', 'DS2']",
+    "form_format": "key-value",
+    "content": "['GO', 'DHEN', 'dips', 'dipe', 'DHLT', 'DS1', 'DS2']",
+    "button": "Save",
+    "navigation": "Network->DHCP Server-Guest",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/AdvSetWrlbasic",
+    "form_parameter": "['chkHz', 'ap', 'mit_cuntry', 'mit_bssid', 'mit_ssid', 'mit_ssid1', 'mit_mode', 'mit_channel', 'mit_bw', 'mit_exchan', 'mit_exchanidx', 'mit_wmm', 'mit_apsd', 'setSlt', 'enablewireless', 'country_code', 'broadcastssid', 'ssid', 'mssid', 'wirelessmode', 'channel', 'n_bandwidth', 'n_extcha', 'wmm_capable', 'apsd_capable', 'country_code1', 'broadcast5gssid', 'ssid1', 'mssid1', 'wirelessmode5g', 'wmm_capable5g', 'apsd_capable5g', 'n_bandwidth5g']",
+    "form_format": "key-value",
+    "content": "['chkHz', 'ap', 'mit_cuntry', 'mit_bssid', 'mit_ssid', 'mit_ssid1', 'mit_mode', 'mit_channel', 'mit_bw', 'mit_exchan', 'mit_exchanidx', 'mit_wmm', 'mit_apsd', 'setSlt', 'enablewireless', 'country_code', 'broadcastssid', 'ssid', 'mssid', 'wirelessmode', 'channel', 'n_bandwidth', 'n_extcha', 'wmm_capable', 'apsd_capable', 'country_code1', 'broadcast5gssid', 'ssid1', 'mssid1', 'wirelessmode5g', 'wmm_capable5g', 'apsd_capable5g', 'n_bandwidth5g']",
+    "button": "Save",
+    "navigation": "Wireless->Basic",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/AdvSetWrlGstset",
+    "form_parameter": "['GO', 'enable_guest', 'enable_bssid', 'enable_isolation', 'mit_ssid', 'chkHz', 'EnableBssid', 'ssid']",
+    "form_format": "key-value",
+    "content": "['GO', 'enable_guest', 'enable_bssid', 'enable_isolation', 'mit_ssid', 'chkHz', 'EnableBssid', 'ssid']",
+    "button": "Save",
+    "navigation": "Wireless->Guest Network",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/AdvSetWrlsafeset",
+    "form_parameter": "['hd_wep_key1', 'hd_wep_key2', 'hd_wep_key3', 'hd_wep_key4', 'hd_wpa_psk_pass', 'chkHz', 'mit_ssid_index', 'mit_ssid', 'SltMode', 'ssid', 'wepSecOpt', 'keytype', 'keynum', 'key1', 'length1', 'key2', 'length2', 'key3', 'length3', 'key4', 'length4', 'wpaSecOpt', 'wpaCipher', 'radiusIp', 'radiusPort', 'radiusSecret', 'intervalWpa', 'pskSecOpt', 'pskCipher', 'pskSecret', 'interval']",
+    "form_format": "key-value",
+    "content": "['hd_wep_key1', 'hd_wep_key2', 'hd_wep_key3', 'hd_wep_key4', 'hd_wpa_psk_pass', 'chkHz', 'mit_ssid_index', 'mit_ssid', 'SltMode', 'ssid', 'wepSecOpt', 'keytype', 'keynum', 'key1', 'length1', 'key2', 'length2', 'key3', 'length3', 'key4', 'length4', 'wpaSecOpt', 'wpaCipher', 'radiusIp', 'radiusPort', 'radiusSecret', 'intervalWpa', 'pskSecOpt', 'pskCipher', 'pskSecret', 'interval']",
+    "button": "Save",
+    "navigation": "Wireless->Security",
+    "match_result": [
+      {
+        "CVE ID": "CVE-2023-38939",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "URI": "/goform/AdvSetWrlsafeset",
+        "form_parameter": "['hd_wep_key1', 'hd_wep_key2', 'hd_wep_key3', 'hd_wep_key4', 'hd_wpa_psk_pass', 'chkHz', 'mit_ssid_index', 'mit_ssid', 'SltMode', 'ssid', 'wepSecOpt', 'keytype', 'keynum', 'key1', 'length1', 'key2', 'length2', 'key3', 'length3', 'key4', 'length4', 'wpaSecOpt', 'wpaCipher', 'radiusIp', 'radiusPort', 'radiusSecret', 'intervalWpa', 'pskSecOpt', 'pskCipher', 'pskSecret', 'interval']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Wireless->Security",
+        "vul_type": "Overflow",
+        "function name": "formWrlsafeset",
+        "parameter or argument": "mit_ssid",
+        "POC": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/AdvSetWrl",
+    "form_parameter": "['GO', 'ap_isolate', 'chkHz', 'mit_wmm', 'mit_apsd', 'beacon', 'fragment', 'rts', 'dtim', 'sgi_tx', 'pwr_percent', 'wmm_capable', 'apsd_capable', 'wmm_capable5g', 'apsd_capable5g']",
+    "form_format": "key-value",
+    "content": "['GO', 'ap_isolate', 'chkHz', 'mit_wmm', 'mit_apsd', 'beacon', 'fragment', 'rts', 'dtim', 'sgi_tx', 'pwr_percent', 'wmm_capable', 'apsd_capable', 'wmm_capable5g', 'apsd_capable5g']",
+    "button": "Save",
+    "navigation": "Wireless->Advanced",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/AdvSetWrlmacfilter",
+    "form_parameter": "['enabled', 'filtermac', 'chkHz', 'rule']",
+    "form_format": "key-value",
+    "content": "['enabled', 'filtermac', 'chkHz', 'rule']",
+    "button": "Save",
+    "navigation": "Wireless->Wireless Access Control",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/WrlExtraSet",
+    "form_parameter": "['GO', 'hd_wep_key1', 'hd_wep_key2', 'hd_wep_key3', 'hd_wep_key4', 'hd_wpa_psk_pass', 'remote_ssid', 'remote_channel', 'remote_extchannel', 'remote_bandwidth', 'remote_network', 'remote_maclist', 'chkHz', 'SltMode', 'extra_mode', 'wds_mode', 'remoteSsid', 'wirelessmode', 'channelBand', 'channel', 'n_extcha', 'remoteMac1', 'remoteMac2', 'securityMode', 'wepSecOpt', 'keytype', 'key1', 'length1', 'length2', 'length3', 'length4', 'pskSecOpt', 'pskCipher', 'pskSecret']",
+    "form_format": "key-value",
+    "content": "['GO', 'hd_wep_key1', 'hd_wep_key2', 'hd_wep_key3', 'hd_wep_key4', 'hd_wpa_psk_pass', 'remote_ssid', 'remote_channel', 'remote_extchannel', 'remote_bandwidth', 'remote_network', 'remote_maclist', 'chkHz', 'SltMode', 'extra_mode', 'wds_mode', 'remoteSsid', 'wirelessmode', 'channelBand', 'channel', 'n_extcha', 'remoteMac1', 'remoteMac2', 'securityMode', 'wepSecOpt', 'keytype', 'key1', 'length1', 'length2', 'length3', 'length4', 'pskSecOpt', 'pskCipher', 'pskSecret']",
+    "button": "Save",
+    "navigation": "Wireless->Wireless Extender",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/wrlwpsset",
+    "form_parameter": "['GO', 'chkHz', 'wpsenable', 'wpsmode', 'wpspin', 'OOB', 'start', 'wifiEn', 'wpsmethod', 'PIN']",
+    "form_format": "key-value",
+    "content": "['GO', 'chkHz', 'wpsenable', 'wpsmode', 'wpspin', 'OOB', 'start', 'wifiEn', 'wpsmethod', 'PIN']",
+    "button": "Save",
+    "navigation": "Wireless->WPS",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/qossetting",
+    "form_parameter": "['entrys', 'page', 'op', 'p2pupbwrange', 'p2pdownbwrange', 'PUT_TC_MODE', 'GET_TC_MODE', 'PUT_FLUX_BANDING', 'GET_FLUX_BANDING', 'isEnable', 'lansip', 'laneip', 'upbwrange', 'downbwrange', 'TC_DESCR']",
+    "form_format": "key-value",
+    "content": "['entrys', 'page', 'op', 'p2pupbwrange', 'p2pdownbwrange', 'PUT_TC_MODE', 'GET_TC_MODE', 'PUT_FLUX_BANDING', 'GET_FLUX_BANDING', 'isEnable', 'lansip', 'laneip', 'upbwrange', 'downbwrange', 'TC_DESCR']",
+    "button": "Save",
+    "navigation": "Advanced->Bandwidth Control",
+    "match_result": [
+      {
+        "CVE ID": "CVE-2023-37723",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "URI": "/goform/qossetting",
+        "form_parameter": "['entrys', 'page', 'op', 'p2pupbwrange', 'p2pdownbwrange', 'PUT_TC_MODE', 'GET_TC_MODE', 'PUT_FLUX_BANDING', 'GET_FLUX_BANDING', 'isEnable', 'lansip', 'laneip', 'upbwrange', 'downbwrange', 'TC_DESCR']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Advanced->Bandwidth Control",
+        "vul_type": "Overflow",
+        "function name": "fromqossetting",
+        "parameter or argument": "page",
+        "POC": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/SysToolDDNS",
+    "form_parameter": "['check1', 'serverName1', 'userName1', 'password1', 'remark1', 'ddnsEnable', 'serverName', 'userName', 'password', 'hostName']",
+    "form_format": "key-value",
+    "content": "['check1', 'serverName1', 'userName1', 'password1', 'remark1', 'ddnsEnable', 'serverName', 'userName', 'password', 'hostName']",
+    "button": "Save",
+    "navigation": "Advanced->DDNS",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/VirtualSer",
+    "form_parameter": "['op', 'entrys', 'page', 'wans', 'sport', 'eport', 'pip', 'Proto', 'chk', 'sport1', 'eport1', 'pip1', 'protocol1', 'sport2', 'eport2', 'pip2', 'protocol2', 'sport3', 'eport3', 'pip3', 'protocol3', 'sport4', 'eport4', 'pip4', 'protocol4', 'sport5', 'eport5', 'pip5', 'protocol5', 'sport6', 'eport6', 'pip6', 'protocol6', 'sport7', 'eport7', 'pip7', 'protocol7', 'sport8', 'eport8', 'pip8', 'protocol8', 'ports', 'ids']",
+    "form_format": "key-value",
+    "content": "['op', 'entrys', 'page', 'wans', 'sport', 'eport', 'pip', 'Proto', 'chk', 'sport1', 'eport1', 'pip1', 'protocol1', 'sport2', 'eport2', 'pip2', 'protocol2', 'sport3', 'eport3', 'pip3', 'protocol3', 'sport4', 'eport4', 'pip4', 'protocol4', 'sport5', 'eport5', 'pip5', 'protocol5', 'sport6', 'eport6', 'pip6', 'protocol6', 'sport7', 'eport7', 'pip7', 'protocol7', 'sport8', 'eport8', 'pip8', 'protocol8', 'ports', 'ids']",
+    "button": "Save",
+    "navigation": "Advanced->Virtual Server",
+    "match_result": [
+      {
+        "CVE ID": "CVE-2025-5978",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "URI": "/goform/VirtualSer",
+        "form_parameter": "['op', 'entrys', 'page', 'wans', 'sport', 'eport', 'pip', 'Proto', 'chk', 'sport1', 'eport1', 'pip1', 'protocol1', 'sport2', 'eport2', 'pip2', 'protocol2', 'sport3', 'eport3', 'pip3', 'protocol3', 'sport4', 'eport4', 'pip4', 'protocol4', 'sport5', 'eport5', 'pip5', 'protocol5', 'sport6', 'eport6', 'pip6', 'protocol6', 'sport7', 'eport7', 'pip7', 'protocol7', 'sport8', 'eport8', 'pip8', 'protocol8', 'ports', 'ids']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Advanced->Virtual Server",
+        "vul_type": "Overflow",
+        "function name": "fromVirtualSer",
+        "parameter or argument": "page",
+        "POC": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/VirSerDMZ",
+    "form_parameter": "['dmzen']",
+    "form_format": "key-value",
+    "content": "['dmzen']",
+    "button": "Save",
+    "navigation": "Advanced->DMZ Host",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/VirSerUpnp",
+    "form_parameter": "['GO', 'UpnpStatus', 'UpnpStatusTmp', 'chkUpnp']",
+    "form_format": "key-value",
+    "content": "['GO', 'UpnpStatus', 'UpnpStatusTmp', 'chkUpnp']",
+    "button": "Save",
+    "navigation": "Advanced->UPnP",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/SetIptv",
+    "form_parameter": "['go', 'iptv_enabled', 'iptv_stb_enabled', 'stballvlans', 'stbpvid', 'citytag']",
+    "form_format": "key-value",
+    "content": "['go', 'iptv_enabled', 'iptv_stb_enabled', 'stballvlans', 'stbpvid', 'citytag']",
+    "button": "Save",
+    "navigation": "Advanced->IPTV",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/RouteStatic",
+    "form_parameter": "['GO', 'ITEMCNT', 'entrys', 'page', 'op', 'mitInterface', 'wans', 'ipAddr', 'netmask', 'getway', 'ifListSelect']",
+    "form_format": "key-value",
+    "content": "['GO', 'ITEMCNT', 'entrys', 'page', 'op', 'mitInterface', 'wans', 'ipAddr', 'netmask', 'getway', 'ifListSelect']",
+    "button": "Save",
+    "navigation": "Advanced->Static Route",
+    "match_result": [
+      {
+        "CVE ID": "CVE-2023-37714",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "URI": "/goform/RouteStatic",
+        "form_parameter": "['GO', 'ITEMCNT', 'entrys', 'page', 'op', 'mitInterface', 'wans', 'ipAddr', 'netmask', 'getway', 'ifListSelect']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Advanced->Static Route",
+        "vul_type": "Overflow",
+        "function name": "fromRouteStatic",
+        "parameter or argument": "page",
+        "POC": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/SafeMacFilter",
+    "form_parameter": "['GO', 'entry', 'op', 'check', 'default_mode', 'menufacturer', 'filter_mode', 'curNum', 'enablemode', 'remark', 'mac', 'mac', 'mac', 'mac', 'mac', 'mac', 'sh', 'sm', 'eh', 'em']",
+    "form_format": "key-value",
+    "content": "['GO', 'entry', 'op', 'check', 'default_mode', 'menufacturer', 'filter_mode', 'curNum', 'enablemode', 'remark', 'mac', 'mac', 'mac', 'mac', 'mac', 'mac', 'sh', 'sm', 'eh', 'em']",
+    "button": "Save",
+    "navigation": "Security->MAC Filter",
+    "match_result": [
+      {
+        "CVE ID": "CVE-2023-37721",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "URI": "/goform/SafeMacFilter",
+        "form_parameter": "['GO', 'entry', 'op', 'check', 'default_mode', 'menufacturer', 'filter_mode', 'curNum', 'enablemode', 'remark', 'mac', 'mac', 'mac', 'mac', 'mac', 'mac', 'sh', 'sm', 'eh', 'em']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Security->MAC Filter",
+        "vul_type": "Overflow",
+        "function name": "fromSafeMacFilter",
+        "parameter or argument": "page",
+        "POC": ""
+      },
+      {
+        "CVE ID": "CVE-2023-37718",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "URI": "/goform/SafeClientFilter",
+        "form_parameter": "['GO', 'clientipgroup', 'clienttimegroup', 'entry', 'op', 'enableIt', 'default_mode', 'menufacturer', 'filter_mode', 'curNum', 'enable', 'remark', 'sh', 'sm', 'eh', 'em']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Security->Client Filter",
+        "vul_type": "Overflow",
+        "function name": "fromSafeClientFilter",
+        "parameter or argument": "page",
+        "POC": ""
+      },
+      {
+        "CVE ID": "CVE-2023-37722",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "URI": "/goform/SafeUrlFilter",
+        "form_parameter": "['GO', 'urltimegroup', 'urlipgroup', 'entry', 'op', 'enableIt', 'default_mode', 'menufacturer', 'filter_mode', 'curNum', 'enable', 'remark', 'sip', 'eip', 'url', 'sh', 'sm', 'eh', 'em']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Security->URL Filter",
+        "vul_type": "Overflow",
+        "function name": "fromSafeUrlFilter",
+        "parameter or argument": "page",
+        "POC": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/SafeClientFilter",
+    "form_parameter": "['GO', 'clientipgroup', 'clienttimegroup', 'entry', 'op', 'enableIt', 'default_mode', 'menufacturer', 'filter_mode', 'curNum', 'enable', 'remark', 'sh', 'sm', 'eh', 'em']",
+    "form_format": "key-value",
+    "content": "['GO', 'clientipgroup', 'clienttimegroup', 'entry', 'op', 'enableIt', 'default_mode', 'menufacturer', 'filter_mode', 'curNum', 'enable', 'remark', 'sh', 'sm', 'eh', 'em']",
+    "button": "Save",
+    "navigation": "Security->Client Filter",
+    "match_result": [
+      {
+        "CVE ID": "CVE-2023-37721",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "URI": "/goform/SafeMacFilter",
+        "form_parameter": "['GO', 'entry', 'op', 'check', 'default_mode', 'menufacturer', 'filter_mode', 'curNum', 'enablemode', 'remark', 'mac', 'mac', 'mac', 'mac', 'mac', 'mac', 'sh', 'sm', 'eh', 'em']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Security->MAC Filter",
+        "vul_type": "Overflow",
+        "function name": "fromSafeMacFilter",
+        "parameter or argument": "page",
+        "POC": ""
+      },
+      {
+        "CVE ID": "CVE-2023-37718",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "URI": "/goform/SafeClientFilter",
+        "form_parameter": "['GO', 'clientipgroup', 'clienttimegroup', 'entry', 'op', 'enableIt', 'default_mode', 'menufacturer', 'filter_mode', 'curNum', 'enable', 'remark', 'sh', 'sm', 'eh', 'em']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Security->Client Filter",
+        "vul_type": "Overflow",
+        "function name": "fromSafeClientFilter",
+        "parameter or argument": "page",
+        "POC": ""
+      },
+      {
+        "CVE ID": "CVE-2023-37722",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "URI": "/goform/SafeUrlFilter",
+        "form_parameter": "['GO', 'urltimegroup', 'urlipgroup', 'entry', 'op', 'enableIt', 'default_mode', 'menufacturer', 'filter_mode', 'curNum', 'enable', 'remark', 'sip', 'eip', 'url', 'sh', 'sm', 'eh', 'em']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Security->URL Filter",
+        "vul_type": "Overflow",
+        "function name": "fromSafeUrlFilter",
+        "parameter or argument": "page",
+        "POC": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/SafeUrlFilter",
+    "form_parameter": "['GO', 'urltimegroup', 'urlipgroup', 'entry', 'op', 'enableIt', 'default_mode', 'menufacturer', 'filter_mode', 'curNum', 'enable', 'remark', 'sip', 'eip', 'url', 'sh', 'sm', 'eh', 'em']",
+    "form_format": "key-value",
+    "content": "['GO', 'urltimegroup', 'urlipgroup', 'entry', 'op', 'enableIt', 'default_mode', 'menufacturer', 'filter_mode', 'curNum', 'enable', 'remark', 'sip', 'eip', 'url', 'sh', 'sm', 'eh', 'em']",
+    "button": "Save",
+    "navigation": "Security->URL Filter",
+    "match_result": [
+      {
+        "CVE ID": "CVE-2023-37721",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "URI": "/goform/SafeMacFilter",
+        "form_parameter": "['GO', 'entry', 'op', 'check', 'default_mode', 'menufacturer', 'filter_mode', 'curNum', 'enablemode', 'remark', 'mac', 'mac', 'mac', 'mac', 'mac', 'mac', 'sh', 'sm', 'eh', 'em']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Security->MAC Filter",
+        "vul_type": "Overflow",
+        "function name": "fromSafeMacFilter",
+        "parameter or argument": "page",
+        "POC": ""
+      },
+      {
+        "CVE ID": "CVE-2023-37718",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "URI": "/goform/SafeClientFilter",
+        "form_parameter": "['GO', 'clientipgroup', 'clienttimegroup', 'entry', 'op', 'enableIt', 'default_mode', 'menufacturer', 'filter_mode', 'curNum', 'enable', 'remark', 'sh', 'sm', 'eh', 'em']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Security->Client Filter",
+        "vul_type": "Overflow",
+        "function name": "fromSafeClientFilter",
+        "parameter or argument": "page",
+        "POC": ""
+      },
+      {
+        "CVE ID": "CVE-2023-37722",
+        "vendor": "Tenda",
+        "product": "FH1202",
+        "URI": "/goform/SafeUrlFilter",
+        "form_parameter": "['GO', 'urltimegroup', 'urlipgroup', 'entry', 'op', 'enableIt', 'default_mode', 'menufacturer', 'filter_mode', 'curNum', 'enable', 'remark', 'sip', 'eip', 'url', 'sh', 'sm', 'eh', 'em']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Security->URL Filter",
+        "vul_type": "Overflow",
+        "function name": "fromSafeUrlFilter",
+        "parameter or argument": "page",
+        "POC": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/SafeWanWebMan",
+    "form_parameter": "['GO', 'webport', 'webip']",
+    "form_format": "key-value",
+    "content": "['GO', 'webport', 'webip']",
+    "button": "Save",
+    "navigation": "Security->Remote Web Management",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/LanDdosAttack",
+    "form_parameter": "['GO', 'clean', 'ddosMap']",
+    "form_format": "key-value",
+    "content": "['GO', 'clean', 'ddosMap']",
+    "button": "Save",
+    "navigation": "Security->DDOS Defence",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/FireallSpi",
+    "form_parameter": "['GO', 'SpiEnable']",
+    "form_format": "key-value",
+    "content": "['GO', 'SpiEnable']",
+    "button": "Save",
+    "navigation": "Security->SPI Firewall",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/AdvSetFlue",
+    "form_parameter": "['enable', 'opt', 'sorts']",
+    "form_format": "key-value",
+    "content": "['enable', 'opt', 'sorts']",
+    "button": "Save",
+    "navigation": "Tools->Traffic Statistics",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/SysToolTime",
+    "form_parameter": "['GO', 'TimeIndex', 'check', 'SETPRIO', 'TZ', 'year', 'month', 'day', 'hour', 'minute', 'second']",
+    "form_format": "key-value",
+    "content": "['GO', 'TimeIndex', 'check', 'SETPRIO', 'TZ', 'year', 'month', 'day', 'hour', 'minute', 'second']",
+    "button": "Save",
+    "navigation": "Tools->Time",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/SysToolChangePwd",
+    "form_parameter": "['GO', 'SYSPSC', 'mitOldUSERNAME', 'mitOldPASSWORD', 'mitNewUSERNAME', 'mitNewPASSWORD', 'mitCfrmNewPASSWORD']",
+    "form_format": "key-value",
+    "content": "['GO', 'SYSPSC', 'mitOldUSERNAME', 'mitOldPASSWORD', 'mitNewUSERNAME', 'mitNewPASSWORD', 'mitCfrmNewPASSWORD']",
+    "button": "Save",
+    "navigation": "Tools->Change Password",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/cgi-bin/DownloadCfg/RouterCfm.cfg",
+    "form_parameter": "",
+    "form_format": "key-value",
+    "content": "",
+    "button": "Save",
+    "navigation": "Tools->Backup",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/cgi-bin/UploadCfg",
+    "form_parameter": "",
+    "form_format": "key-value",
+    "content": "",
+    "button": "Save",
+    "navigation": "Tools->Restore",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/cgi-bin/upgrade",
+    "form_parameter": "",
+    "form_format": "key-value",
+    "content": "",
+    "button": "Save",
+    "navigation": "Tools->Firmware Upgrade",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/SysToolRestoreSet",
+    "form_parameter": "['CMD', 'GO', 'CCMD']",
+    "form_format": "key-value",
+    "content": "['CMD', 'GO', 'CCMD']",
+    "button": "Save",
+    "navigation": "Tools->Restore to Factory Default",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1201",
+    "URI": "/goform/SysToolReboot",
+    "form_parameter": "['CMD', 'CCMD']",
+    "form_format": "key-value",
+    "content": "['CMD', 'CCMD']",
+    "button": "Save",
+    "navigation": "Tools->Reboot",
+    "match_result": []
+  }
+]

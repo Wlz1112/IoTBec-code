@@ -1,0 +1,20 @@
+# Secrets and local configuration
+.env
+*.pem
+*.key
+
+# Python and local runtime output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+dashboard/server.out.log
+dashboard/server.err.log
+dashboard/data/tasks.json
+dashboard/data/*.json
+
+# Temporary Office lock files and generated experiment logs
+~$*
+*.log
+
+# Large/private research artifacts; keep source code and JSON signatures tracked
+IoTBec_NDSS_2026.pdf

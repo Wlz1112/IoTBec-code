@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>IoTBec Lab Console</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark">IB</div>
+    <div><div class="brand-title">IoTBec Lab Console</div><div class="brand-subtitle">Black-box interface discovery and controlled fuzz validation</div></div>
+    <div class="top-status"><span class="dot"></span><span id="healthText">checking service</span></div>
+  </header>
+  <main class="shell">
+    <section class="hero-row"><div><p class="eyebrow">RESEARCH WORKBENCH</p><h1>黑盒接口到验证</h1><p class="lede">不读取目标固件或源码，从设备 Web 响应发现接口，再进行 VIS 匹配和受控验证。</p></div><div class="run-summary"><span class="summary-label">当前任务</span><strong id="currentTask">未启动</strong><span id="currentPhase">等待配置</span></div></section>
+    <section class="metric-grid" aria-label="任务概况"><div class="metric"><span>发现接口</span><strong id="metricInterfaces">0</strong><small>Black-box interfaces</small></div><div class="metric"><span>匹配候选</span><strong id="metricMatches">0</strong><small>VIS candidates</small></div><div class="metric"><span>测试用例</span><strong id="metricCases">0</strong><small>safe variants</small></div><div class="metric"><span>异常</span><strong id="metricAnomalies">0</strong><small>HTTP / timeout</small></div></section>
+    <div class="content-grid">
+      <section class="panel config-panel"><div class="panel-head"><div><p class="eyebrow">01 / TARGET</p><h2>目标设备配置</h2></div><span class="badge">black-box first</span></div>
+        <form id="taskForm">
+          <label>目标 URL<input id="targetUrl" type="url" value="http://127.0.0.1:8080" required></label>
+          <div class="field-row"><label>用户名<input id="username" type="text" autocomplete="off"></label><label>密码<input id="password" type="password" autocomplete="off"></label></div>
+          <div class="field-row"><label>登录路径<input id="loginPath" type="text" placeholder="/login.cgi"></label><label>请求方法<select id="method"><option>POST</option><option>GET</option></select></label></div>
+          <div class="field-row"><label>用户名字段<input id="usernameField" type="text" value="username"></label><label>密码字段<input id="passwordField" type="text" value="password"></label></div>
+          <section class="discovery-panel"><div class="provider-head"><div><span class="section-kicker">INTERFACE SOURCE</span><b>论文 IS 接口来源</b></div><span class="provider-status configured">严格论文模式</span></div><select id="interfaceSource"><option value="blackbox" selected>黑盒页面发现</option><option value="har-json">导入浏览器 HAR 请求包</option><option value="offline-json">导入已有 IS JSON</option></select><p class="provider-hint">论文模式只从目标黑盒页面或浏览器网络请求构建 IS；漏洞库 JSON 仅作为 VS，不会注入目标接口。</p></section>
+          <div id="offlineInterfaceField" hidden><label>IS / HAR 请求包 JSON<select id="interfacePath"></select></label><label id="interfaceFileField" hidden>本地 HAR 文件<input id="interfaceFile" type="file" accept=".har,.json,application/json"></label></div>
+          <label>漏洞库 JSON<select id="databasePath"></select></label>
+          <section class="cve-panel"><div class="provider-head"><div><span class="section-kicker">CVE KNOWLEDGE BASE</span><b>自动生成厂商漏洞库</b></div><span class="provider-status">NVD + MiMo</span></div><div class="field-row"><label>厂商<input id="cveVendor" type="text" placeholder="例如 OpenWrt / Xiaomi"></label><label>产品型号<input id="cveProduct" type="text" placeholder="例如 LuCI / AX3000"></label></div><div class="field-row"><label>版本<input id="cveVersion" type="text" placeholder="可留空"></label><label>补充关键词<input id="cveKeywords" type="text" placeholder="可留空"></label></div><div class="provider-actions"><span id="cveStatus" class="provider-status">不会修改原有漏洞库</span><button id="buildCveButton" class="test-button" type="button">搜索并生成 JSON</button></div><p class="provider-hint">先从 NVD 获取 CVE，再由当前 LLM 配置整理为 IoTBec 格式；URI 和参数无法从证据确认时会保留为空。</p></section>
+          <details><summary>高级设置</summary><div class="advanced-grid"><label>匹配阈值<input id="threshold" type="number" min="0" max="100" value="75"></label><label>最大用例<input id="maxCases" type="number" min="1" max="5000" value="50"></label><label>间隔（毫秒）<input id="delayMs" type="number" min="0" max="60000" value="250"></label><label>超时（秒）<input id="timeout" type="number" min="1" max="120" value="8"></label><label>最大页面数<input id="maxPages" type="number" min="1" max="200" value="30"></label><label>最大爬取深度<input id="maxDepth" type="number" min="0" max="5" value="2"></label></div></details>
+          <section class="provider-panel"><div class="provider-head"><div><span class="section-kicker">MODEL GATEWAY</span><b>LLM API 配置</b></div><span id="providerStatus" class="provider-status">未测试</span></div><div class="field-row"><label>服务商<select id="provider"><option value="mimo">小米 MiMo</option><option value="openai">OpenAI GPT</option><option value="deepseek">DeepSeek</option><option value="claude">Anthropic Claude</option></select></label><label>模型<input id="model" type="text" value="mimo-v2.5-pro" autocomplete="off"></label></div><label>Base URL<input id="baseUrl" type="url" value="https://token-plan-cn.xiaomimimo.com/v1" autocomplete="off"></label><label>API Key<input id="apiKey" type="password" placeholder="输入对应服务商密钥，不会写入任务报告" autocomplete="new-password"></label><div class="provider-actions"><label class="checkline"><input id="llmEnabled" type="checkbox"><span>任务中启用模型辅助</span></label><button id="testApiButton" class="test-button" type="button">测试连接</button></div><p class="provider-hint">使用小米 MiMo 官方 API；当前采用 MiMo 提供的 Chat Completions 兼容协议，不会调用 OpenAI。留空 API Key 时，可使用服务器环境变量中的本机密钥。</p></section>
+          <div class="mode-row"><label class="mode-option"><input type="radio" name="mode" value="preview" checked><span><b>预览</b><small>发现接口并生成用例，不发送 fuzz 请求</small></span></label><label class="mode-option live"><input type="radio" name="mode" value="live"><span><b>实际测试</b><small>仅用于已获授权的实验设备</small></span></label></div>
+          <label class="checkline"><input id="authorized" type="checkbox"><span>我确认目标是我拥有或获授权测试的设备</span></label>
+          <div class="form-actions"><button class="primary" type="submit">开始任务 <span>→</span></button><button id="stopButton" class="secondary" type="button" disabled>停止</button></div>
+        </form>
+        <div class="notice"><span>!</span><p>默认只做黑盒发现和安全测试变体生成，不执行仓库中的 PoC 脚本或命令注入载荷。</p></div>
+      </section>
+      <section class="panel results-panel"><div class="panel-head"><div><p class="eyebrow">02 / OBSERVABILITY</p><h2>运行结果</h2></div><button id="refreshButton" class="icon-button" title="刷新结果">↻</button></div><div id="emptyState" class="empty-state"><div class="empty-icon">◌</div><h3>等待一项任务</h3><p>输入设备 URL 后，预览模式会先发现黑盒接口，再生成匹配和测试用例。</p></div><div id="resultContent" hidden><div class="progress-wrap"><div class="progress-line"><span id="progressLabel">0 / 0</span><span id="progressPhase">queued</span></div><div class="progress"><i id="progressBar"></i></div></div><div class="tabs"><button class="tab active" data-tab="matches">匹配候选</button><button class="tab" data-tab="cases">测试用例</button><button class="tab" data-tab="logs">运行日志</button></div><div id="matchesTab" class="tab-content"></div><div id="casesTab" class="tab-content" hidden></div><div id="logsTab" class="tab-content" hidden></div></div></section>
+    </div>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

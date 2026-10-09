@@ -1,0 +1,372 @@
+[
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/WanParameterSetting",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Connect",
+        "navigation": "Internet Settings->Internet Settings"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/WifiBasicSet",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "WiFi Settings->WiFi Name & Password"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/openSchedWifi",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "WiFi Settings->WiFi Schedule"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/WifiExtraSet",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "WiFi Settings->Wireless Repeating"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/WifiRadioSet",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "WiFi Settings->Channel & Bandwidth"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/WifiPowerSet",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "WiFi Settings->Transmit Power"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/WifiWpsSet",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "WiFi Settings->WPS"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/WifiBeamformingSet",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Beamforming+",
+        "navigation": "WiFi Settings->Beamforming+"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/setApModeCfg",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "WiFi Settings->AP Mode"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/WifiGuestSet",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "Guest Network->Guest Network"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SetOnlineDevName",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "Parental Control->Parental Control"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/saveParentControlInfo",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "Parental Control->Parental Control"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/setIPv6Status",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "IPV6->IPV6"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SetNetControlList",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "Advanced Settings->BandWidth Control"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/cloudv2",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "Advanced Settings->Tenda App"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/PowerSaveSet",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "Advanced Settings->Sleeping Mode"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SetLEDCfg",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "Advanced Settings->Led Control"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/setMacFilterCfg",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "Advanced Settings->Filter MAC Address"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SetFirewallCfg",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "Advanced Settings->Firewall"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SetIPTVCfg",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "Advanced Settings->IPTV"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SetStaticRouteCfg",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "+New",
+        "navigation": "Advanced Settings->Static Route"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SetDDNSCfg",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "Advanced Settings->DDNS"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SetVirtualServerCfg",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "+New",
+        "navigation": "Advanced Settings->Virtual Server"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SetDMZCfg",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "Advanced Settings->DMZ Host"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SetUpnpCfg",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "Advanced Settings->UPnP"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/AdvSetLanip",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "System Settings->LAN Settings"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SetIpMacBind",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "+New",
+        "navigation": "System Settings->DHCP Reservation"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/AdvSetMacMtuWan",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "System Settings->WAN Settings"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SetSysTimeCfg",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "System Settings->Time Settings"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SysToolChangePwd",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "System Settings->Login Password"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SysToolRestoreSet",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Reset",
+        "navigation": "System Settings->Reboot and Reset"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SysToolReboot",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Reboot",
+        "navigation": "System Settings->Reboot and Reset"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/cgi-bin/DownloadCfg/RouterCfm.cfg",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Back Up",
+        "navigation": "System Settings->Backup/Restore"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/cgi-bin/UploadCfg",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Restore",
+        "navigation": "System Settings->Backup/Restore"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SetRemoteWebCfg",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "System Settings->Remote Management"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/cgi-bin/DownloadLog/syslog.tar",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Export",
+        "navigation": "System Settings->System Log"
+    },
+    {
+        "vendor": "Tenda",
+        "product": "AC10",
+        "URI": "/goform/SetSysAutoRebbotCfg",
+        "form_parameter": "",
+        "form_format": "",
+        "content": "",
+        "button": "Save",
+        "navigation": "System Settings->Automatic Maintenance"
+    }
+]

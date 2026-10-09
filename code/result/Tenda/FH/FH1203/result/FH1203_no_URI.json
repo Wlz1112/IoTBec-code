@@ -1,0 +1,290 @@
+[
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/WanParameterSetting",
+    "form_parameter": "['connect', 'lanIp', 'lanMask', 'wanType', 'staticIp', 'mask', 'gateway', 'dns1', 'dns2', 'adslUser', 'adslPwd']",
+    "form_format": "key-value",
+    "content": "['connect', 'lanIp', 'lanMask', 'wanType', 'staticIp', 'mask', 'gateway', 'dns1', 'dns2', 'adslUser', 'adslPwd']",
+    "button": "Connect",
+    "navigation": "Internet Settings->Internet Settings",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/WifiBasicSet",
+    "form_parameter": "['security', 'security_5g', 'ssid', 'ssid_5g', 'hideSsid', 'hideSsid_5g', 'wrlPwd', 'wrlPwd_5g']",
+    "form_format": "key-value",
+    "content": "['security', 'security_5g', 'ssid', 'ssid_5g', 'hideSsid', 'hideSsid_5g', 'wrlPwd', 'wrlPwd_5g']",
+    "button": "Save",
+    "navigation": "WiFi Settings->WiFi Settings",
+    "match_result": [
+      {
+        "CVE ID": "CVE-2023-24166",
+        "vendor": "Tenda",
+        "product": "AC18",
+        "URI": "/goform/WifiBasicSet",
+        "form_parameter": "['wrlEn', 'wrlEn_5g', 'security', 'security_5g', 'ssid', 'ssid_5g', 'hideSsid', 'hideSsid_5g', 'wrlPwd', 'wrlPwd_5g']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "WiFi Settings->WiFi Name & Password",
+        "vul_type": "Overflow",
+        "function name": "formWifiBasicSet",
+        "parameter or argument": "",
+        "POC": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/AdvSetMacMtuWan",
+    "form_parameter": "['wanMTU', 'wanSpeed', 'cloneType', 'mac']",
+    "form_format": "key-value",
+    "content": "['wanMTU', 'wanSpeed', 'cloneType', 'mac']",
+    "button": "Save",
+    "navigation": "Advanced Settings->WAN Settings",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/DhcpSetSer",
+    "form_parameter": "['dhcpEn', 'startIp', 'endIp', 'lease']",
+    "form_format": "key-value",
+    "content": "['dhcpEn', 'startIp', 'endIp', 'lease']",
+    "button": "Save",
+    "navigation": "Advanced Settings->DHCP Server",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/AdvSetLanip",
+    "form_parameter": "['lanIp']",
+    "form_format": "key-value",
+    "content": "['lanIp']",
+    "button": "Save",
+    "navigation": "Advanced Settings->LAN Settings",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/WifiExtraSet",
+    "form_parameter": "['clientApEn', 'ssid', 'security', 'wpapsk_type', 'wpapsk_crypto', 'wpapsk_key', 'wifi_chkHz', 'mac']",
+    "form_format": "key-value",
+    "content": "['clientApEn', 'ssid', 'security', 'wpapsk_type', 'wpapsk_crypto', 'wpapsk_key', 'wifi_chkHz', 'mac']",
+    "button": "Save",
+    "navigation": "Advanced Settings->Wireless Repeating",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/WifiPowerSet",
+    "form_parameter": "['power']",
+    "form_format": "key-value",
+    "content": "['power']",
+    "button": "Save",
+    "navigation": "Advanced Settings->Transmit Power",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/openSchedWifi",
+    "form_parameter": "['schedWifiEnable', 'schedStartTime', 'schedEndTime', 'timeType', 'day']",
+    "form_format": "key-value",
+    "content": "['schedWifiEnable', 'schedStartTime', 'schedEndTime', 'timeType', 'day']",
+    "button": "Save",
+    "navigation": "Advanced Settings->WiFi Schedule",
+    "match_result": [
+      {
+        "CVE ID": "CVE-2024-2490",
+        "vendor": "Tenda",
+        "product": "AC18",
+        "URI": "/goform/openSchedWifi",
+        "form_parameter": "['schedWifiEnable', 'schedStartTime', 'schedEndTime', 'timeType', 'day']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "WiFi Settings->WiFi Schedule",
+        "vul_type": "Overflow",
+        "function name": "setSchedWifi",
+        "parameter or argument": "schedStartTime/schedEndTime",
+        "POC": ""
+      },
+      {
+        "CVE ID": "CVE-2022-40865",
+        "vendor": "Tenda",
+        "product": "AC18",
+        "URI": "/goform/openSchedWifi",
+        "form_parameter": "['schedWifiEnable', 'schedStartTime', 'schedEndTime', 'timeType', 'day']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "WiFi Settings->WiFi Schedule",
+        "vul_type": "Overflow",
+        "function name": "setSchedWifi",
+        "parameter or argument": "",
+        "POC": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/WifiRadioSet",
+    "form_parameter": "['adv_channel_5g', 'adv_band', 'adv_channel', 'adv_band_5g']",
+    "form_format": "key-value",
+    "content": "['adv_channel_5g', 'adv_band', 'adv_channel', 'adv_band_5g']",
+    "button": "Save",
+    "navigation": "Advanced Settings->Channel & Bandwidth",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/openDnsCheck",
+    "form_parameter": "['dnsEnable']",
+    "form_format": "key-value",
+    "content": "['dnsEnable']",
+    "button": "Save",
+    "navigation": "Advanced Settings->DDNS",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/cloud",
+    "form_parameter": "['enable', 'password', 'list']",
+    "form_format": "key-value",
+    "content": "['enable', 'password', 'list']",
+    "button": "Save",
+    "navigation": "Advanced Settings->DDNS",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/SetDMZCfg",
+    "form_parameter": "['dmzEn', 'dmzIp']",
+    "form_format": "key-value",
+    "content": "['dmzEn', 'dmzIp']",
+    "button": "Save",
+    "navigation": "Advanced Settings->DMZ Host",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/SetOnlineDevName",
+    "form_parameter": "['deviceName', 'deviceId']",
+    "form_format": "key-value",
+    "content": "['deviceName', 'deviceId']",
+    "button": "Save",
+    "navigation": "Advanced Settings->Parental Control",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/saveParentControlInfo",
+    "form_parameter": "['deviceId', 'enable', 'time', 'url_enable', 'urls', 'day']",
+    "form_format": "key-value",
+    "content": "['deviceId', 'enable', 'time', 'url_enable', 'urls', 'day']",
+    "button": "Save",
+    "navigation": "Advanced Settings->Parental Control",
+    "match_result": [
+      {
+        "CVE ID": "CVE-2024-33180",
+        "vendor": "Tenda",
+        "product": "AC18",
+        "URI": "/goform/saveParentControlInfo",
+        "form_parameter": "['deviceId', 'enable', 'time', 'url_enable', 'urls', 'day', 'limit_type']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Parental Control->Parental Control",
+        "vul_type": "Overflow",
+        "function name": "",
+        "parameter or argument": "deviceId",
+        "POC": ""
+      },
+      {
+        "CVE ID": "CVE-2022-38314",
+        "vendor": "Tenda",
+        "product": "AC18",
+        "URI": "/goform/saveParentControlInfo",
+        "form_parameter": "['deviceId', 'enable', 'time', 'url_enable', 'urls', 'day', 'limit_type']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Parental Control->Parental Control",
+        "vul_type": "Overflow",
+        "function name": "saveParentControlInfo",
+        "parameter or argument": "urls",
+        "POC": ""
+      },
+      {
+        "CVE ID": "CVE-2022-38313",
+        "vendor": "Tenda",
+        "product": "AC18",
+        "URI": "/goform/saveParentControlInfo",
+        "form_parameter": "['deviceId', 'enable', 'time', 'url_enable', 'urls', 'day', 'limit_type']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Parental Control->Parental Control",
+        "vul_type": "Overflow",
+        "function name": "saveParentControlInfo",
+        "parameter or argument": "time",
+        "POC": ""
+      },
+      {
+        "CVE ID": "CVE-2022-30474",
+        "vendor": "Tenda",
+        "product": "AC18",
+        "URI": "/goform/saveParentControlInfo",
+        "form_parameter": "['deviceId', 'enable', 'time', 'url_enable', 'urls', 'day', 'limit_type']",
+        "form_format": "key-value",
+        "button": "Save",
+        "navigation": "Parental Control->Parental Control",
+        "vul_type": "Overflow",
+        "function name": "",
+        "parameter or argument": "",
+        "POC": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/SysToolChangePwd",
+    "form_parameter": "['GO', 'SYSOPS', 'SYSPS', 'SYSPS2']",
+    "form_format": "key-value",
+    "content": "['GO', 'SYSOPS', 'SYSPS', 'SYSPS2']",
+    "button": "Save",
+    "navigation": "System Settings->Login Password",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/SysToolRestoreSet",
+    "form_parameter": "['action']",
+    "form_format": "key-value",
+    "content": "['action']",
+    "button": "Reset",
+    "navigation": "System Settings->Reset",
+    "match_result": []
+  },
+  {
+    "vendor": "Tenda",
+    "product": "FH1203",
+    "URI": "/goform/SysToolReboot",
+    "form_parameter": "['action']",
+    "form_format": "key-value",
+    "content": "['action']",
+    "button": "Reboot",
+    "navigation": "System Settings->Reboot",
+    "match_result": []
+  }
+]
